@@ -1,0 +1,15 @@
+# Ignore .idea directory (IDE settings for JetBrains IDEs)
+.idea/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore other common files and directories
+*.log
+*.sqlite3
+*.env
+.DS_Store
+.vscode/
+node_modules/

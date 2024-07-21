@@ -7,7 +7,7 @@ class TestFastAPI(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.client = TestClient(ap)
+        cls.client = TestClient(app)
 
     def test_root(self):
         response = self.client.get("/")

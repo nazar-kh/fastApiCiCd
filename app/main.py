@@ -1,12 +1,11 @@
 from fastapi import FastAPI
+
 app = FastAPI()
 
 
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
-myvar=10
-
 
 
 @app.get("/hello/{name}")

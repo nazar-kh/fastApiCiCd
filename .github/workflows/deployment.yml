@@ -21,6 +21,12 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover -s tests
+  deploy-on-ecs:
+    runs-on: ubuntu-latest
+    needs: build-application-dependencies
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
 
 
